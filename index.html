@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <script>
+
+            var cylinder = {
+                radius: 10,
+                height: 10,
+                getSquare: function() {
+                    return 2 * Math.PI * this.radius * this.height;
+                },
+                getVolume: function() {
+                    return Math.PI * this.radius **2 * this.height;
+                }
+            };
+
+
+            function getResult(a,b,c){
+
+                if (c == '+'){
+                    return a + b;
+                } else if (c == '*'){
+                    return a * b;
+                } else if (c == '/'){
+                    return a / b;
+                } else if (c == '-'){
+                    return a - b;
+                }
+
+            }
+
+            var result =+ getResult(2,3,'-');
+            console.log(result)
+
+
+        </script>
+
+    </body>
+</html>
