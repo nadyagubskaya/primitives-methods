@@ -20,22 +20,33 @@
             };
 
 
-            function getResult(a,b,c){
+            function getResult(operand1,operand2,operation){
 
-                if (c == '+'){
-                    return a + b;
-                } else if (c == '*'){
-                    return a * b;
-                } else if (c == '/'){
-                    return a / b;
-                } else if (c == '-'){
-                    return a - b;
+                if (operation == '+'){
+                    return operand1 + operand2;
+                } else if (operation == '*'){
+                    return operand1 * operand2;
+                } else if (operation == '/'){
+                    return operand1 / operand2;
+                } else if (operation == '-'){
+                    return operand1 - operand2;
                 }
 
             }
 
             var result =+ getResult(2,3,'-');
-            console.log(result)
+            
+            
+            function character(string, character){
+                return string.includes(character);
+            }
+            
+            function charIndexOf(string, character){
+                return string.indexOf(character);
+            }
+            
+            var IndexOf = charIndexOf('lol', 'o')
+ 
 
 
         </script>
