@@ -35,18 +35,45 @@
             }
 
             var result =+ getResult(2,3,'-');
-            
-            
+
+
             function character(string, character){
-                return string.includes(character);
+
+                var stringUser = string;
+                var stringLet = '';
+
+                for (var i = 0; i < string.length; i++){
+                    stringLet = stringUser[i];
+
+                    if (stringLet == character){
+                        return true;
+                    }
+
+                }
+
+                return false;
             }
-            
+//            console.log(character('lout','t'))
+
+
             function charIndexOf(string, character){
-                return string.indexOf(character);
+
+                var stringUser = string;
+                var stringIndex = '';
+                var stringLet = '';
+
+                for (var i = 0; i < string.length; i++){
+                    stringLet = stringUser[i];
+                    stringIndex = i;
+                    if (stringLet == character){
+                        return stringIndex;
+                    }
+                }
+                 return -1;
             }
-            
-            var IndexOf = charIndexOf('lol', 'o')
- 
+
+            console.log(charIndexOf('loltgf','g'))
+
 
 
         </script>
